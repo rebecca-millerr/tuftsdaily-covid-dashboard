@@ -1,0 +1,23 @@
+{
+  "name": "tuftsdaily-covid-dashboard",
+  "version": "1.0.0",
+  "description": "The new and improved COVID Dashboard for The Tufts Daily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd server && node index.js\" \"if [ \\\"$NODE_ENV\\\" != \\\"production\\\" ]; then cd client && npm start; fi \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebecca-millerr/tuftsdaily-covid-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebecca-millerr/tuftsdaily-covid-dashboard/issues"
+  },
+  "homepage": "https://github.com/rebecca-millerr/tuftsdaily-covid-dashboard#readme",
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
