@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd server && node index.js\" \"if [ \\\"$NODE_ENV\\\" != \\\"production\\\" ]; then cd client && npm start; fi \""
+    "start": "concurrently \"cd server && node index.js\" \"if [ \\\"$NODE_ENV\\\" != \\\"production\\\" ]; then cd client && npm start; fi \"",
+      "build": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
