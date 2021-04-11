@@ -1,4 +1,10 @@
 div.test-table {
     display: grid;
+    width: 90%;
+    margin: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid blue;
     grid-template-columns: 20% 30% 50%;
 }
